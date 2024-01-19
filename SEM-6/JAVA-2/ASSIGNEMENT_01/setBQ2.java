@@ -7,26 +7,29 @@ class HashTableSort{
              String city;
              Scanner sc = new Scanner(System.in);
              
-             HashMap<Integer,String> h = new HashMap<>();
-             System.out.println("Enter the Number of Students(key,value) : ");
+             HashMap<Integer,String> c = new HashMap<>();
+             System.out.println("Enter the Number of Entry(key,value) : ");
              int n = sc.nextInt();
          
-              System.out.println("Enter the Students(key,value) : ");
+              System.out.println("Enter the Entry(key,value) : ");
              
              for (int i=0;i<n;i++)
              {
-                 h.put(sc.nextInt(),sc.next());
+                 c.put(sc.nextInt(),sc.next());
              }
-             System.out.println("Hash Table is : ");
-             System.out.println(" "+h+" \n");
-             
-             TreeMap<Integer,String> T = new TreeMap<>(h);
-             
-
-             System.out.println("Sorted Hash Table is : ");
-            
-             System.out.println(" "+T+" \n");
-             
-            
+             System.out.println("Hash Table is : "+c);
+             for (Integer k : c.keySet())
+             {
+                 System.out.println("Key  : "+k+" Value : "+c.get(k));
+             }
+             System.out.println("");
+             TreeMap<Integer,String> c1 = new TreeMap<Integer, String>();
+             c1.putAll(c);
+           
+             System.out.println("After Hash Table is : "+c1);
+             for (Integer k : c1.keySet())
+             {
+                 System.out.println("Key  : "+k+" Value : "+c1.get(k));
+             } 
       }
 }
