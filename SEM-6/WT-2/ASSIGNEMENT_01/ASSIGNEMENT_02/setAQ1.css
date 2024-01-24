@@ -1,0 +1,31 @@
+setA{
+    display:flex;
+    width:200px;
+    border:2px solid white;
+}
+iname{
+      display:block;
+      padding:5px;
+      color:red;
+      font-family:copperplate Gothic Light;
+      font-size:16pt;
+      font:bold;
+}
+
+price{
+      padding:5px;
+      color:yellow;
+      font-family:Arial;
+      font-size:12pt;
+      font:bold;
+}
+quantity{
+      	
+      padding:5px;
+      color:green;
+
+      
+}
+*{
+      background-color:black;
+}
