@@ -1,0 +1,36 @@
+<html>
+<head>
+      <title> B1 doc </title>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    
+    <form >
+        <fieldset>
+                Enter name : <input type="text" name="nm"id="nm"> 
+                <br><br>
+                Enter password : <input type="password" id="ps">
+                 <br><br>
+                <button onclick="check()"> Submit  </button>
+        </fieldset>
+    </form>
+
+    <script>
+        function check(){
+            var n=document.getElementById("nm").value;
+            var p=document.getElementById("ps").value;
+        
+
+          if (n==p){
+            window.alert("Name and password is same :");
+          }
+          else
+          {
+            window.alert("Name and password is not same :");
+          }
+        }
+    </script>
+</body>
+
+</html>

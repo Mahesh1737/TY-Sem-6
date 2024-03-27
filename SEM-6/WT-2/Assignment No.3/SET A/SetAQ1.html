@@ -1,0 +1,48 @@
+<html>
+<head>
+      <title> A1 doc </title>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+      
+
+      click to demonstrate : <button id="b1" onclick="myfunction()">  alert </button>
+
+      <br><br><br>
+
+      click to demonstrate confirm box : <button id="b1" onclick="myfun()">  Confirm </button> 
+
+
+      <p id="nm"></p>
+
+
+
+
+
+      <script>
+
+            function myfunction(){
+                  window.alert(" Exams are near , have you started preparing for ? ");
+            }
+            function myfun()
+            {
+                  var r=confirm("Press a button ");
+                  if (r==true){
+                        window.confirm("You pressed ok ");
+                  }
+                  else{
+                        window.confirm("You pressed cancel ");
+                  }
+            }
+
+            var p=prompt(" Please enter your name : ");
+            if (p!=null){
+                  document.getElementById("nm").innerHTML=" Hello "+p+" Who  are you & why are you here ? ";
+            }
+            
+
+
+      </script>
+    
+</body>
+</html>
