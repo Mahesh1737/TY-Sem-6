@@ -11,7 +11,7 @@ class ColorsList{
              colors.add("black");
              colors.add("white");
       
-             System.out.println("Friend names  Are : ");
+             System.out.println("Colors  Are : ");
              for (String color : colors)
              {                 
                  System.out.println(" "+color+" \n");
